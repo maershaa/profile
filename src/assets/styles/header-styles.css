@@ -1,18 +1,35 @@
 header {
-    display: flex;
-    justify-content: space-between;
-        flex-wrap: nowrap; 
+  position: sticky;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+
+  height: 30px;
+  margin-bottom: 220px;
 }
 
 .nav-list {
-     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; 
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+
+      margin-left: auto;
+      margin-right: 20px;
+
+      column-gap: 10px;
+
 }
 
-.social-links-list{
-         display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; 
+.social-links-list {
+  display: flex;
+  justify-content:end;
+  align-items: baseline;
+  flex-wrap: nowrap;
+
+        column-gap: 20px;
+
 }
+
