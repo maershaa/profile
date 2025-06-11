@@ -8,11 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "icons": "svg-sprite-generate -d ./src/assets/icons -o ./public/sprite.svg"
-
   },
-
-
-
   "dependencies": {
     "vue": "^3.5.13"
   },

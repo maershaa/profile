@@ -41,7 +41,7 @@
       <p>Hi 👋, My name is Valeriia Yefremova I build things for web</p>
     </div>
     <div>
-      <img src="./images/кот.jpeg" alt="my photo" width="250" height="200" />
+      <img src="./assets/images/кот.jpeg" alt="my photo" width="250" height="200" />
     </div>
   </main>
   <section>
