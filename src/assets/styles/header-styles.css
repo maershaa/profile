@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+        flex-wrap: nowrap; 
+
+}
+
+.nav-list {
+     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+}
+
+.social-links-list{
+         display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+}

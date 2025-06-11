@@ -1,30 +1,154 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <header>
+    <svg width="24" height="20" class="icon-logo">
+      <use href="/sprite.svg#logo"></use>
+    </svg>
+
+    <nav>
+      <ul class="list nav-list">
+        <li class="link"><a href="#"> Home </a></li>
+        <li class="link"><a href="#"> About </a></li>
+        <li class="link"><a href="#"> Tech Stack</a></li>
+        <li class="link"><a href="#"> Projects</a></li>
+        <li class="link"><a href="#"> Contact</a></li>
+        <li>
+          <ul class="list social-links-list">
+            <li class="link">
+              <svg width="30" height="30" class="icon-logo">
+                <use href="/sprite.svg#github-icon-dark"></use>
+              </svg>
+            </li>
+            <li class="link">
+              <svg width="30" height="30" class="icon-logo">
+                <use href="/sprite.svg#linkedin-logo"></use>
+              </svg>
+            </li>
+            <li class="link">
+  <svg width="30" height="30" class="icon-logo">
+        <use href="/sprite.svg#logo"></use>
+      </svg>
+
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- <main>
+        <div class="hero">
+          <p>Hi 👋,
+            My name is
+            Valeriia Yefremova
+            I build things for web</p>
+        </div>
+        <div>
+          <img src="./images/кот.jpeg" alt="my photo" width="250" height="200">
+        </div>
+
+
+    </main>
+    <section>
+      <h1>My Tech Stack</h1>
+      <h2> Technologies I’ve been working with recently</h2>
+      <ul>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+        <li><svg></svg></li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h1>Projects</h1>
+      <h2>Things I’ve built so far</h2>
+      <ul>
+        <li>
+          <img src="#" alt="">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="#" alt="">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="#" alt="">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="#" alt="">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="#" alt="">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="#" alt="">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h1>Contact</h1>
+    </section>
+
+
+    <footer>
+
+    </footer>
+     -->
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<script setup>
+// ничего не обязательно писать, если логики нет
+</script>
+
+<style>
+/* какие-то стили */
 </style>
