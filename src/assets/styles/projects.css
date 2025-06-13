@@ -9,6 +9,7 @@
     align-content: center;
 
     flex-wrap: wrap;
+
   }
 }
 
@@ -32,29 +33,60 @@
 
 .projects-item {
   width: 260px;
-  height: 370x;
+  
+
+    background-color: var(--project-bg);
+border-radius: 20px;
+
+    padding-bottom: 15px;
+
 }
 
 .projects-img {
   width: 260px;
   height: 370x;
+  border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+margin-bottom: 17px;
 }
 
 .projects-item-wpapper {
   padding: 5px 15px;
+  height: 310px;
+
+
+  
 }
 
 .project-title {
   text-align: center;
+
+  margin-bottom: 14px;
+  
+  white-space: nowrap;
+  overflow: hidden;
+
 }
 
 .project-descr {
-  text-align: center;
+    display: -webkit-box;
+  -webkit-line-clamp: 5; /* Количество отображаемых строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align:left;
+
+  margin-bottom: 12px;
+
 }
 
 .project-stack {
   text-align: start;
       font-size: 1rem;
+
+      margin-bottom: 15px;
+
 
 }
 
@@ -77,9 +109,28 @@ flex-wrap: nowrap;
     font-size: 0.8rem;
         text-align: center;
 
+
 }
 
 .project-icon {
   width: 20px;
   height: 20px;
+}
+
+ /* По умолчанию показываем иконку для тёмной темы */
+.icon-light {
+  display: inline;
+}
+.icon-dark {
+  display:  none;
+}
+
+/* Когда светлая тема — меняем иконку */
+@media (prefers-color-scheme: light) {
+  .icon-light {
+    display: none;
+  }
+  .icon-dark {
+    display: inline;
+  }
 }

@@ -7,7 +7,10 @@ header {
   flex-wrap: nowrap;
 
   height: 30px;
+  padding: 0 32px 28px 32px;
   margin-bottom: 220px;
+
+  border-bottom: 2px solid var(--border-header);
 }
 
 .nav-list {
@@ -16,29 +19,27 @@ header {
   align-items: baseline;
   flex-wrap: nowrap;
 
-      margin-left: auto;
-      margin-right: 20px;
+  margin-left: auto;
+  margin-right: 20px;
 
-      column-gap: 10px;
-
+  column-gap: 10px;
 }
 
 .social-links-list {
   display: flex;
-  justify-content:end;
+  justify-content: end;
   align-items: baseline;
   flex-wrap: nowrap;
 
-        column-gap: 20px;
-
+  column-gap: 20px;
 }
 
-.logo-link{
-  width:30px;
-   height:30px;
+.logo-link {
+  width: 30px;
+  height: 30px;
 }
 
-.icon-logo{
-    width:30px;
-   height:30px;
+.icon-logo {
+  width: 30px;
+  height: 30px;
 }
