@@ -16,19 +16,31 @@
 
     <ul class="list social-links-list">
       <li class="link">
-        <svg width="20" height="20" class="icon-logo">
+        <a href="https://github.com/maershaa">
+ <svg width="20" height="20" class="icon-logo">
           <use href="/sprite.svg#github-icon-dark"></use>
         </svg>
+        </a>
       </li>
+
       <li class="link">
-        <svg width="20" height="20" class="icon-logo">
+        <a href="https://www.linkedin.com/in/valeriiayefremova/">
+
+  <svg width="20" height="20" class="icon-logo">
           <use href="/sprite.svg#linkedin-logo"></use>
         </svg>
+        </a>
+      
       </li>
       <li class="link">
-        <svg width="20" height="20" class="icon-logo">
-          <use href="/sprite.svg#logo"></use>
+
+        <a href="https://djinni.co/q/11234af847/">
+
+  <svg width="20" height="20" class="icon-logo">
+          <use href="/sprite.svg#djinni-icon"></use>
         </svg>
+        </a>
+      
       </li>
     </ul>
   </header>
@@ -47,7 +59,7 @@
     </section>
 
     <section id="about">
-      <h2  class="section-title">About</h2>
+      <h2 class="section-title">About</h2>
       <h3 class="sectiom-descr">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione optio
         dicta consectetur culpa quisquam blanditiis suscipit ipsam alias commodi
@@ -135,18 +147,24 @@
             <p class="project-stack">
               Tech stack : <span>HTML , JavaScript </span>
             </p>
+
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#chain-icon"></use>
-                </svg>
-                <a href="#" class="link"> Live Preview </a>
+                <a href="#" class="link">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#chain-icon"></use>
+                  </svg>
+                  Live Preview
+                </a>
               </li>
+
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#github-icon-dark"></use>
-                </svg>
-                <a href="#"> View Code </a>
+                <a href="#">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#github-icon-dark"></use>
+                  </svg>
+                  View Code
+                </a>
               </li>
             </ul>
           </div>
@@ -171,16 +189,21 @@
             </p>
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#chain-icon"></use>
-                </svg>
-                <a href="#" class="link"> Live Preview </a>
+                <a href="#" class="link">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#chain-icon"></use>
+                  </svg>
+                  Live Preview
+                </a>
               </li>
+
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#github-icon-dark"></use>
-                </svg>
-                <a href="#"> View Code </a>
+                <a href="#">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#github-icon-dark"></use>
+                  </svg>
+                  View Code
+                </a>
               </li>
             </ul>
           </div>
@@ -205,16 +228,21 @@
             </p>
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#chain-icon"></use>
-                </svg>
-                <a href="#" class="link"> Live Preview </a>
+                <a href="#" class="link">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#chain-icon"></use>
+                  </svg>
+                  Live Preview
+                </a>
               </li>
+
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#github-icon-dark"></use>
-                </svg>
-                <a href="#"> View Code </a>
+                <a href="#">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#github-icon-dark"></use>
+                  </svg>
+                  View Code
+                </a>
               </li>
             </ul>
           </div>
@@ -238,16 +266,21 @@
             </p>
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#chain-icon"></use>
-                </svg>
-                <a href="#" class="link"> Live Preview </a>
+                <a href="#" class="link">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#chain-icon"></use>
+                  </svg>
+                  Live Preview
+                </a>
               </li>
+
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#github-icon-dark"></use>
-                </svg>
-                <a href="#"> View Code </a>
+                <a href="#">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#github-icon-dark"></use>
+                  </svg>
+                  View Code
+                </a>
               </li>
             </ul>
           </div>
@@ -273,16 +306,21 @@
 
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#chain-icon"></use>
-                </svg>
-                <a href="#" class="link"> Live Preview </a>
+                <a href="#" class="link">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#chain-icon"></use>
+                  </svg>
+                  Live Preview
+                </a>
               </li>
+
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#github-icon-dark"></use>
-                </svg>
-                <a href="#"> View Code </a>
+                <a href="#">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#github-icon-dark"></use>
+                  </svg>
+                  View Code
+                </a>
               </li>
             </ul>
           </div>
@@ -307,16 +345,21 @@
             </p>
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#chain-icon"></use>
-                </svg>
-                <a href="#" class="link"> Live Preview </a>
+                <a href="#" class="link">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#chain-icon"></use>
+                  </svg>
+                  Live Preview
+                </a>
               </li>
+
               <li class="project-link-item">
-                <svg class="project-icon">
-                  <use href="/sprite.svg#github-icon-dark"></use>
-                </svg>
-                <a href="#"> View Code </a>
+                <a href="#">
+                  <svg class="project-icon">
+                    <use href="/sprite.svg#github-icon-dark"></use>
+                  </svg>
+                  View Code
+                </a>
               </li>
             </ul>
           </div>
@@ -325,28 +368,40 @@
     </section>
 
     <section id="contact">
-      <h2 class="section-title"> Contact</h2>
+      <h2 class="section-title">Contact</h2>
       <div class="contacts-wraper">
         <a href="tel:+91 12345 09876">+91 12345 09876 </a>
         <a href="mailto:info@example.com"> info@example.com </a>
 
         <ul class="list social-links-list">
-          <li class="link">
-            <svg width="20" height="20" class="icon-logo">
-              <use href="/sprite.svg#github-icon-dark"></use>
-            </svg>
-          </li>
-          <li class="link">
-            <svg width="20" height="20" class="icon-logo">
-              <use href="/sprite.svg#linkedin-logo"></use>
-            </svg>
-          </li>
-          <li class="link">
-            <svg width="20" height="20" class="icon-logo">
-              <use href="/sprite.svg#logo"></use>
-            </svg>
-          </li>
-        </ul>
+      <li class="link">
+        <a href="https://github.com/maershaa">
+ <svg width="20" height="20" class="icon-logo">
+          <use href="/sprite.svg#github-icon-dark"></use>
+        </svg>
+        </a>
+      </li>
+
+      <li class="link">
+        <a href="https://www.linkedin.com/in/valeriiayefremova/">
+
+  <svg width="20" height="20" class="icon-logo">
+          <use href="/sprite.svg#linkedin-logo"></use>
+        </svg>
+        </a>
+      
+      </li>
+      <li class="link">
+
+        <a href="https://djinni.co/q/11234af847/">
+
+  <svg width="20" height="20" class="icon-logo">
+          <use href="/sprite.svg#djinni-icon"></use>
+        </svg>
+        </a>
+      
+      </li>
+    </ul>
       </div>
     </section>
   </main>
