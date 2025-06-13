@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+        "serve": "vite preview",
     "icons": "svg-sprite-generate -d ./src/assets/icons -o ./public/sprite.svg"
   },
   "dependencies": {
