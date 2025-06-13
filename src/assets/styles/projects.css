@@ -1,0 +1,82 @@
+/* Мобильные телефоны от 320px и выше */
+@media screen and (min-width: 320px) {
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex-wrap: wrap;
+  }
+}
+
+/* Планшеты от 768px */
+@media screen and (min-width: 768px) {
+  .projects-list {
+    flex-direction: row;
+
+    column-gap: 50px;
+    row-gap: 40px;
+  }
+}
+
+/* Десктопы от 1024px */
+@media screen and (min-width: 1024px) {
+  .projects-list {
+    column-gap: 100px;
+    row-gap: 70px;
+  }
+}
+
+.projects-item {
+  width: 260px;
+  height: 370x;
+}
+
+.projects-img {
+  width: 260px;
+  height: 370x;
+}
+
+.projects-item-wpapper {
+  padding: 5px 15px;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-descr {
+  text-align: center;
+}
+
+.project-stack {
+  text-align: start;
+      font-size: 1rem;
+
+}
+
+.project-stack span{
+        font-size: 0.8rem;
+
+}
+
+.project-link-list {
+  display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+flex-wrap: nowrap;
+    
+}
+
+.project-link-item {
+    font-size: 0.8rem;
+}
+
+.project-icon {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  flex-direction:row;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  flex-wrap: nowrap;
+
+  gap: 2rem;
+}
+
+.main-photo {
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.greeting {
+
+  width: 40%;
+  max-width: 400px;
+  max-height: 300px;
+
+    font-size: 1.5rem;
+
+}
