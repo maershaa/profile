@@ -69,11 +69,14 @@
       align-items: center;
       justify-content: space-between;
 flex-wrap: nowrap;
-    
+      gap: 0.5rem; 
+
 }
 
 .project-link-item {
     font-size: 0.8rem;
+        text-align: center;
+
 }
 
 .project-icon {
