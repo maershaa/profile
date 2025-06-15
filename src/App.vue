@@ -1,5 +1,6 @@
 <template>
-  <header>
+<header class="header">
+  <div class="header-container">
     <a href="https://maershaa.github.io/profile/" class="logo-link">
       <svg class="icon-logo">
         <use href="/sprite.svg#logo"></use>
@@ -14,6 +15,8 @@
       <li class="link"><a href="#contact"> Contact</a></li>
     </ul>
 
+
+
     <ul class="list social-links-list">
       <li class="link">
         <a href="https://github.com/maershaa">
@@ -22,7 +25,6 @@
           </svg>
         </a>
       </li>
-
       <li class="link">
         <a href="https://www.linkedin.com/in/valeriiayefremova/">
           <svg width="20" height="20" class="icon-logo">
@@ -31,7 +33,23 @@
         </a>
       </li>
     </ul>
-  </header>
+    
+    <!-- Переключатель темы -->
+    <div class="toggle-theme">
+      <input type="checkbox" id="darkmode-toggle" class="switch-checkbox" />
+      <label for="darkmode-toggle" class="switch-label">
+        <svg class="moon-icon">
+          <use href="/sprite.svg#moon-icon"></use>
+        </svg>
+        <svg class="sun-icon">
+          <use href="/sprite.svg#sun-icon"></use>
+        </svg>
+      </label>
+    </div>
+
+  </div>
+</header>
+
 
   <main>
     <section id="hero" class="hero">
@@ -408,9 +426,29 @@
   <footer></footer>
 </template>
 
+<!-- можно в App.vue или index.html -->
 <script setup>
-// ничего не обязательно писать, если логики нет
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const toggle = document.getElementById('darkmode-toggle');
+
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    toggle.checked = savedTheme === 'dark';
+  }
+
+  toggle.addEventListener('change', () => {
+    const theme = toggle.checked ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  });
+});
 </script>
+
+  
+
 
 <style>
 /* какие-то стили */
