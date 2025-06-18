@@ -1,138 +1,134 @@
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px;
-  flex-wrap: nowrap;
-}
-
-.toggle-theme {
+/* Обёртка для переключателя */
+.theme-toggle {
   margin: 0 20px;
   position: relative;
 }
 
-.switch-checkbox {
+/* Скрываем checkbox: он нужен только для логики, не для отображения */
+.switch {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.switch-label {
+/* Основная панель-переключатель (label), в ней движется псевдоэлемент-ползунок */
+.slider {
   display: block;
   position: relative;
+
   width: 70px;
   height: 32px;
+
   top: -13px;
   right: -13px;
-  background-color: #ffc0cb;
+
+  background-color: #ffc0cb; 
   border-radius: 200px;
   box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4),
-              inset 0 5px 15px rgba(255, 255, 255, 0.4);
+ inset 0 5px 15px rgba(255, 255, 255, 0.4); 
+
   cursor: pointer;
-  transition: background-color 0.3s ease;
+transition: right 0.4s ease, left 0.4s ease, width 0.2s ease-in-out;
 }
 
-/* Круглый ползунок */
-.switch-label::after {
+/* Круглый ползунок, который двигается внутри .slider */
+.slider::after {
   content: "";
   position: absolute;
+
   top: 2px;
-  left: 40px;
+  right: 2px; /* по умолчанию прижат к правому краю (режим light) */
+
   width: 28px;
   height: 28px;
-  background: linear-gradient(180deg, #6441a5, #2a0845);
-  border-radius: 50%;
+
+  background: linear-gradient(
+    180deg,
+    #6441a5,
+    #2a0845
+  ); /* фиолетовый градиент */
+  border-radius: 180px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
-    /* 
-    ⏳ Плавные переходы:
-    - left: отвечает за смещение ползунка слева направо и наоборот.
-    - transform: используется для растягивания (scaleX) ползунка при нажатии.
-    - cubic-bezier даёт "упругий", пружинный эффект.
-  */
-
-  transition:
-    left 0.4s cubic-bezier(0.25, 1.25, 0.5, 1),
-    transform 0.4s cubic-bezier(0.25, 1.25, 0.5, 1);
+  transition: right 0.4s ease, width 0.2s ease;
 }
 
-/* Ползунок в режиме Light — справа */
-.switch-checkbox:not(:checked) + .switch-label::after {
-  left: 40px;
-  transform-origin: left center; /* Растягивается внутрь, вправо */
-  transform: scaleX(1);
+/* Состояние Light: ползунок справа */
+.switch:not(:checked) + .slider::after {
+  right: 2px;
+  width: 28px;
 }
 
-/* Ползунок в режиме Dark — слева */
-.switch-checkbox:checked + .switch-label::after {
-  left: 2px;
-  transform-origin: right center; /* Растягивается внутрь, влево */
-  transform: scaleX(1);
+/* Вытягивание при нажатии справа (режим light) — растягиваем влево */
+.switch:not(:checked) + .slider:active::after {
+  right: 2px; /* остаётся прижатым к правому краю */
+  width: 40px; /* вытягивается влево */
 }
 
-/*
-  🔍 Когда пользователь нажимает на ползунок:
-  - transform: scaleX(1.4) делает его шире по оси X на 40%.
-  - transform-origin задаётся отдельно (влево или вправо), чтобы ползунок "вытягивался внутрь",
-    не выходя за границы переключателя.
-  - Это создаёт ощущение живого/мягкого взаимодействия, похожего на "желейный" отклик.
-*/
-/* Растяжение внутрь при нажатии */
-.switch-checkbox:not(:checked) + .switch-label:active::after {
-  transform-origin: left center;
-  transform: scaleX(1.4);
+/* Состояние Dark: ползунок слева */
+.switch:checked + .slider::after {
+  right: auto;
+  left: 2px; /* сдвигаем к левому краю */
+  width: 28px;
 }
 
-.switch-checkbox:checked + .switch-label:active::after {
-  transform-origin: right center;
-  transform: scaleX(1.4);
+/* Вытягивание при нажатии слева (режим dark) — растягиваем вправо */
+.switch:checked + .slider:active::after {
+  left: 2px; /* остаётся прижатым к левому краю */
+  width: 40px; /* вытягивается вправо */
 }
 
-.switch-checkbox:checked + .switch-label {
-  background-color: #c6c6fd;
+/* Смена цвета фона ползунка при переключении темы */
+.switch:checked + .slider {
+  background-color: #c6c6fd; /* светло-сиреневый фон */
 }
 
-/* SVG иконки внутри ползунка */
-.switch-label svg {
+/* 🌗 Иконки солнца и луны внутри ползунка */
+.slider .moon,
+.slider .sun {
   position: absolute;
   width: 21px;
   height: 21px;
   top: 5px;
   z-index: 100;
   transition: opacity 0.3s ease;
-  pointer-events: none;
+  pointer-events: none; /* чтобы не мешали нажатию */
 }
 
-.switch-label svg.sun-icon {
+/* 🌞 Солнце по умолчанию видно, справа */
+.slider .sun {
   left: 44px;
   fill: #fff;
   opacity: 1;
 }
 
-.switch-label svg.moon-icon {
+/* 🌙 Луна по умолчанию скрыта, слева */
+.slider .moon {
   left: 6px;
   fill: #fff;
   opacity: 0;
 }
 
-.switch-checkbox:checked + .switch-label .sun-icon {
+/* 🌜 Включён dark-режим: солнце исчезает */
+.switch:checked + .slider .sun {
   opacity: 0;
   transition-delay: 0s;
 }
 
-.switch-checkbox:checked + .switch-label .moon-icon {
+/* 🌜 Включён dark-режим: луна появляется */
+.switch:checked + .slider .moon {
   opacity: 1;
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 
-.switch-checkbox:not(:checked) + .switch-label .sun-icon {
+/* 🌞 Включён light-режим: солнце видно */
+.switch:not(:checked) + .slider .sun {
   opacity: 1;
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 
-.switch-checkbox:not(:checked) + .switch-label .moon-icon {
+/* 🌞 Включён light-режим: луна скрыта */
+.switch:not(:checked) + .slider .moon {
   opacity: 0;
   transition-delay: 0s;
 }

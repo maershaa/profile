@@ -1,55 +1,51 @@
 <template>
-<header class="header">
-  <div class="header-container">
-    <a href="https://maershaa.github.io/profile/" class="logo-link">
-      <svg class="icon-logo">
-        <use href="/sprite.svg#logo"></use>
-      </svg>
-    </a>
-
-    <ul class="list nav-list">
-      <li class="link"><a href="#hero"> Home </a></li>
-      <li class="link"><a href="#about"> About </a></li>
-      <li class="link"><a href="#tech_stack"> Tech Stack</a></li>
-      <li class="link"><a href="#projects"> Projects</a></li>
-      <li class="link"><a href="#contact"> Contact</a></li>
-    </ul>
-
-
-
-    <ul class="list social-links-list">
-      <li class="link">
-        <a href="https://github.com/maershaa">
-          <svg width="20" height="20" class="icon-logo">
-            <use href="/sprite.svg#github-icon-dark"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="link">
-        <a href="https://www.linkedin.com/in/valeriiayefremova/">
-          <svg width="20" height="20" class="icon-logo">
-            <use href="/sprite.svg#linkedin-logo"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    
-    <!-- Переключатель темы -->
-    <div class="toggle-theme">
-      <input type="checkbox" id="darkmode-toggle" class="switch-checkbox" />
-      <label for="darkmode-toggle" class="switch-label">
-        <svg class="moon-icon">
-          <use href="/sprite.svg#moon-icon"></use>
+  <header class="header">
+    <div class="header-container">
+      <a href="https://maershaa.github.io/profile/" class="logo-link">
+        <svg class="icon-logo">
+          <use href="/sprite.svg#logo"></use>
         </svg>
-        <svg class="sun-icon">
-          <use href="/sprite.svg#sun-icon"></use>
-        </svg>
-      </label>
+      </a>
+
+      <ul class="list nav-list">
+        <li class="link"><a href="#hero"> Home </a></li>
+        <li class="link"><a href="#about"> About </a></li>
+        <li class="link"><a href="#tech_stack"> Tech Stack</a></li>
+        <li class="link"><a href="#projects"> Projects</a></li>
+        <li class="link"><a href="#contact"> Contact</a></li>
+      </ul>
+
+      <ul class="list social-links-list">
+        <li class="link">
+          <a href="https://github.com/maershaa">
+            <svg width="20" height="20" class="icon-logo">
+              <use href="/sprite.svg#github-icon-dark"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="link">
+          <a href="https://www.linkedin.com/in/valeriiayefremova/">
+            <svg width="20" height="20" class="icon-logo">
+              <use href="/sprite.svg#linkedin-logo"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Переключатель темы -->
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="switch" />
+        <label for="theme-switch" class="slider">
+          <svg class="icon moon">
+            <use href="/sprite.svg#moon-icon"></use>
+          </svg>
+          <svg class="icon sun">
+            <use href="/sprite.svg#sun-icon"></use>
+          </svg>
+        </label>
+      </div>
     </div>
-
-  </div>
-</header>
-
+  </header>
 
   <main>
     <section id="hero" class="hero">
@@ -426,29 +422,14 @@
   <footer></footer>
 </template>
 
-<!-- можно в App.vue или index.html -->
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
+import { initThemeToggle } from './helpers/themeToggle'
 
 onMounted(() => {
-  const toggle = document.getElementById('darkmode-toggle');
-
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    toggle.checked = savedTheme === 'dark';
-  }
-
-  toggle.addEventListener('change', () => {
-    const theme = toggle.checked ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  });
-});
+  initThemeToggle()
+})
 </script>
-
-  
-
 
 <style>
 /* какие-то стили */
