@@ -27,6 +27,12 @@
   --bg-repeat: repeat, no-repeat, no-repeat;
   --bg-size: contain, contain, contain;
   --bg-position: center, top left, top right;
+  --bg-img-mb: radial-gradient(
+    circle,
+    rgb(156, 184, 255) 0%,
+    rgba(59, 71, 111, 1) 42%,
+    rgba(0, 3, 25, 1) 100%
+  );
 }
 
 :root[data-theme="light"] {
@@ -47,6 +53,12 @@
   --bg-repeat: repeat, repeat;
   --bg-size: contain, auto;
   --bg-position: center, center;
+  --bg-img-mb: radial-gradient(
+    circle,
+    rgba(156, 184, 255, 1) 0%,
+    rgba(233, 239, 255, 1) 51%,
+    rgba(233, 239, 255, 1) 100%
+  );
 }
 
 :root {
@@ -100,7 +112,6 @@ html {
 @media screen and (min-width: 768px) {
   #app {
     padding: 3rem 2rem;
-
   }
 }
 
@@ -124,17 +135,16 @@ body {
   color: var(--text-color);
 
   /* padding-top:20px */
-
-
+  background-image: var(--bg-img-mb);
 }
 
 /* Планшеты от 768px */
 @media screen and (min-width: 768px) {
   body {
-  background-image: var(--bg-img);
-  background-repeat: var(--bg-repeat);
-  background-size: var(--bg-size);
-  background-position: var(--bg-position);
+    background-image: var(--bg-img);
+    background-repeat: var(--bg-repeat);
+    background-size: var(--bg-size);
+    background-position: var(--bg-position);
   }
 }
 

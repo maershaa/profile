@@ -1,6 +1,4 @@
 <template>
-
-<div class="bg_wrapper"> 
   <header class="header">
     <div class="header-container">
       <a href="https://maershaa.github.io/profile/" class="logo-link">
@@ -49,28 +47,24 @@
     </div>
   </header>
 
+  <section id="hero" class="hero">
+    <p class="greeting">
+      Hi 👋, My name is Valeriia Yefremova I build things for web
+    </p>
 
-    <section id="hero" class="hero">
-      <p class="greeting">
-        Hi 👋, My name is Valeriia Yefremova I build things for web
-      </p>
+    <img src="./assets/images/my-photo.jpg" alt="my photo" class="main-photo" />
+  </section>
 
-      <img
-        src="./assets/images/my-photo.jpg"
-        alt="my photo"
-        class="main-photo"
-      />
-    </section>
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <h3 class="sectiom-descr">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione optio
+      dicta consectetur culpa quisquam blanditiis suscipit ipsam alias commodi
+      esse mollitia, quasi dolorum sunt qui quo ipsum, quod similique ex?
+    </h3>
+  </section>
 
-    <section id="about">
-      <h2 class="section-title">About</h2>
-      <h3 class="sectiom-descr">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione optio
-        dicta consectetur culpa quisquam blanditiis suscipit ipsam alias commodi
-        esse mollitia, quasi dolorum sunt qui quo ipsum, quod similique ex?
-      </h3>
-    </section>
-</div>
+  <main>
     <section id="tech_stack">
       <h2 class="section-title">My Tech Stack</h2>
       <h3 class="sectiom-descr">
@@ -420,17 +414,17 @@
         </ul>
       </div>
     </section>
-
+  </main>
   <footer></footer>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { initThemeToggle } from './helpers/themeToggle'
+import { onMounted } from "vue";
+import { initThemeToggle } from "./helpers/themeToggle";
 
 onMounted(() => {
-  initThemeToggle()
-})
+  initThemeToggle();
+});
 </script>
 
 <style>
