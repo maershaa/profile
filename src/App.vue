@@ -1,4 +1,6 @@
 <template>
+
+<div class="bg_wrapper"> 
   <header class="header">
     <div class="header-container">
       <a href="https://maershaa.github.io/profile/" class="logo-link">
@@ -47,7 +49,7 @@
     </div>
   </header>
 
-  <main>
+
     <section id="hero" class="hero">
       <p class="greeting">
         Hi 👋, My name is Valeriia Yefremova I build things for web
@@ -68,7 +70,7 @@
         esse mollitia, quasi dolorum sunt qui quo ipsum, quod similique ex?
       </h3>
     </section>
-
+</div>
     <section id="tech_stack">
       <h2 class="section-title">My Tech Stack</h2>
       <h3 class="sectiom-descr">
@@ -418,7 +420,7 @@
         </ul>
       </div>
     </section>
-  </main>
+
   <footer></footer>
 </template>
 

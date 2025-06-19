@@ -13,13 +13,20 @@
 }
 
 :root[data-theme="dark"] {
-  --bg-color: #242424;
+  --bg-color: #000319;
   --text-color: rgba(255, 255, 255, 0.87);
   --link: #646cff;
   --link-hover: #a8b1ff;
   --button-bg: #333;
   --border-header: #f3f3f333;
   --project-bg: #363636;
+
+  --bg-img: url(src/assets/images/hero/grid-pattern.png),
+    url("src/assets/images/hero/spotlight-left.png"),
+    url("src/assets/images//hero/spotlight-right.png");
+  --bg-repeat: repeat, no-repeat, no-repeat;
+  --bg-size: contain, contain, contain;
+  --bg-position: center, top left, top right;
 }
 
 :root[data-theme="light"] {
@@ -30,8 +37,17 @@
   --button-bg: #f9f9f9;
   --border-header: #161f371a;
   --project-bg: #ffffff;
-}
 
+  --bg-img: url("../images/hero/starts-sky.png"),
+    radial-gradient(
+      circle,
+      rgba(156, 184, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  --bg-repeat: repeat, repeat;
+  --bg-size: contain, auto;
+  --bg-position: center, center;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -46,28 +62,21 @@
   /* Сообщаем браузеру, что поддерживаем обе темы */
   color-scheme: light dark;
 
-
   color: var(--text-color);
 }
 
-
-
-
-
-
-
-
-
-
 html {
   scroll-behavior: smooth;
-    font-size: clamp(14px, 1.5vw, 18px);  /* адаптивный размер шрифта:
+  font-size: clamp(
+    14px,
+    1.5vw,
+    18px
+  ); /* адаптивный размер шрифта:
     - минимум 14px (на маленьких экранах)
     - 1.5vw — это 1.5% от ширины экрана (динамический размер)
     - максимум 18px (на больших экранах)
     Таким образом, 1rem будет автоматически меняться от 14px до 18px в зависимости от ширины экрана.
   */
-
 }
 
 #app {
@@ -91,6 +100,7 @@ html {
 @media screen and (min-width: 768px) {
   #app {
     padding: 3rem 2rem;
+
   }
 }
 
@@ -101,8 +111,6 @@ html {
   }
 }
 
-
-
 body {
   margin: 0;
   display: flex;
@@ -112,13 +120,23 @@ body {
 
   font-size: 1rem;
 
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
   color: var(--text-color);
 
   /* padding-top:20px */
+
+
 }
 
-
+/* Планшеты от 768px */
+@media screen and (min-width: 768px) {
+  body {
+  background-image: var(--bg-img);
+  background-repeat: var(--bg-repeat);
+  background-size: var(--bg-size);
+  background-position: var(--bg-position);
+  }
+}
 
 img {
   display: block;
@@ -141,7 +159,7 @@ p {
   margin-bottom: 0;
 }
 
-p{
+p {
   font-size: 1.125rem;
 }
 
@@ -158,14 +176,12 @@ a {
   text-decoration: inherit;
 }
 
-
 a:hover {
   color: var(--link-hover);
 }
 
-
 h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
   line-height: 1.1;
 }
 
@@ -181,7 +197,6 @@ button {
   transition: border-color 0.25s;
 
   background-color: var(--button-bg);
-
 }
 
 button:hover {
@@ -197,16 +212,14 @@ button:focus-visible {
   padding: 2em;
 }
 
-section{
+section {
   margin-bottom: 20px;
 }
 
-.section-title{
-    margin-bottom: 20px;
-
+.section-title {
+  margin-bottom: 20px;
 }
 
-.sectiom-descr{
-      margin-bottom: 10px;
-
+.sectiom-descr {
+  margin-bottom: 10px;
 }
