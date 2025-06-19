@@ -8,10 +8,21 @@ header {
 
   height: 30px;
   padding: 0 32px 28px 32px;
-  margin-bottom: 220px;
-
-  border-bottom: 2px solid var(--border-header);
+  margin-bottom: 80px;
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+ header{
+    margin-bottom: 180px;
+  }
+}
+
 
 .header-container {
   display: flex;
@@ -23,8 +34,6 @@ header {
   flex-wrap: nowrap;
 }
 
-
-
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -32,9 +41,13 @@ header {
   flex-wrap: nowrap;
 
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 40px;
 
-  column-gap: 10px;
+  column-gap: 20px;
+  padding: 23px 40px;
+
+  border-radius: 13px;
+  background: var(--bg-secondary);
 }
 
 .social-links-list {
@@ -49,6 +62,7 @@ header {
 .logo-link {
   width: 30px;
   height: 30px;
+  margin-right: auto;
 }
 
 .icon-logo {

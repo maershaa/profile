@@ -12,48 +12,38 @@
   padding: 0;
 }
 
-:root[data-theme="dark"] {
-  --bg-color: #000319;
-  --text-color: rgba(255, 255, 255, 0.87);
-  --link: #646cff;
-  --link-hover: #a8b1ff;
-  --button-bg: #333;
-  --border-header: #f3f3f333;
-  --project-bg: #363636;
-
-  --bg-img: url(src/assets/images/hero/grid-pattern.png),
-    url("src/assets/images/hero/spotlight-left.png"),
-    url("src/assets/images//hero/spotlight-right.png");
-  --bg-repeat: repeat, no-repeat, no-repeat;
-  --bg-size: contain, contain, contain;
-  --bg-position: center, top left, top right;
-  --bg-img-mb: radial-gradient(
-    circle,
-    rgb(156, 184, 255) 0%,
-    rgba(59, 71, 111, 1) 42%,
-    rgba(0, 3, 25, 1) 100%
-  );
-}
-
 :root[data-theme="light"] {
-  --bg-color: #ffffff;
-  --text-color: #213547;
+  /* Основные цвета фона */
+  --bg-primary: #ffffff;
+  --bg-secondary: rgba(233, 239, 255, 1);
+
+  /* Цвет текста */
+  --text-primary: #213547;
+  --text-secondary: #555555;
+
+  /* Цвета ссылок */
   --link: #646cff;
   --link-hover: #747bff;
-  --button-bg: #f9f9f9;
-  --border-header: #161f371a;
-  --project-bg: #ffffff;
 
-  --bg-img: url("../images/hero/starts-sky.png"),
-    radial-gradient(
-      circle,
-      rgba(156, 184, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-  --bg-repeat: repeat, repeat;
-  --bg-size: contain, auto;
-  --bg-position: center, center;
-  --bg-img-mb: radial-gradient(
+  /* Кнопки */
+  --button-bg: #f9f9f9;
+  --shadow-border:  0 0 25px 10px rgba(100, 108, 255, 0.5),
+    0 0 60px 25px rgba(100, 108, 255, 0.25);
+  --button-hover-border: #646cff;
+
+  /* Границы */
+  /* --border-header: #161f371a;  */
+
+
+  /* Фоны */
+  --background-img: url("../images/hero/starts-sky.png"),
+    radial-gradient(circle, rgba(156, 184, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  --background-repeat: repeat, repeat;
+  --background-size: contain, auto;
+  --background-position: center, center;
+
+  /* Фон для мобильных */
+ --background-img-mobile: radial-gradient(
     circle,
     rgba(156, 184, 255, 1) 0%,
     rgba(233, 239, 255, 1) 51%,
@@ -61,20 +51,58 @@
   );
 }
 
+:root[data-theme="dark"] {
+  --bg-primary: #000319;
+  --bg-secondary: linear-gradient(150deg, #04071d 0%, #0c0e23 100%);
+
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: #bbbbbb;
+
+  --link: #646cff;
+  --link-hover: #a8b1ff;
+
+  --button-bg: #333333;
+
+  --shadow-border:   0 0 25px 10px rgba(100, 108, 255, 0.5),
+    0 0 60px 25px rgba(100, 108, 255, 0.25);
+  --button-hover-border: #646cff;
+  --border-header: #f3f3f333; /* прозрачный белый */
+
+
+
+  --background-img: url("src/assets/images/hero/grid-pattern.png"),
+    url("src/assets/images/hero/spotlight-left.png"),
+    url("src/assets/images/hero/spotlight-right.png");
+  --background-repeat: repeat, no-repeat, no-repeat;
+  --background-size: contain, contain, contain;
+  --background-position: center, top left, top right;
+
+  --background-img-mobile: radial-gradient(
+    circle,
+    rgb(156, 184, 255) 0%,
+    rgba(59, 71, 111, 1) 42%,
+    rgba(0, 3, 25, 1) 100%
+  );
+}
+
 :root {
+  --accent-color1: #747bff;
+
+  --accent-color2: #ffc0cb;
+
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Сообщаем браузеру, что поддерживаем обе темы */
   color-scheme: light dark;
 
-  color: var(--text-color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 html {
@@ -131,20 +159,18 @@ body {
 
   font-size: 1rem;
 
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 
-  /* padding-top:20px */
-  background-image: var(--bg-img-mb);
+  background-image: var(--background-img-mobile);
 }
 
-/* Планшеты от 768px */
 @media screen and (min-width: 768px) {
   body {
-    background-image: var(--bg-img);
-    background-repeat: var(--bg-repeat);
-    background-size: var(--bg-size);
-    background-position: var(--bg-position);
+    background-image: var(--background-img);
+    background-repeat: var(--background-repeat);
+    background-size: var(--background-size);
+    background-position: var(--background-position);
   }
 }
 
@@ -210,7 +236,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: var(--button-hover-border);
 }
 
 button:focus,
@@ -223,7 +249,19 @@ button:focus-visible {
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+section {
+  margin-bottom: 80px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+section {
+  margin-bottom: 110px;
+}
 }
 
 .section-title {
@@ -233,3 +271,8 @@ section {
 .sectiom-descr {
   margin-bottom: 10px;
 }
+
+
+
+
+
