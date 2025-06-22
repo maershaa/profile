@@ -73,9 +73,9 @@
 
 --icon-color: #6971A2;
 
-  --background-img: url("src/assets/images/hero/grid-pattern.png"),
-    url("src/assets/images/hero/spotlight-left.png"),
-    url("src/assets/images/hero/spotlight-right.png");
+  --background-img: url("../images/hero/grid-pattern.png"),
+    url("../images/hero/spotlight-left.png"),
+    url("../images/hero/spotlight-right.png");
   --background-repeat: repeat, no-repeat, no-repeat;
   --background-size: contain, contain, contain;
   --background-position: center, top left, top right;
