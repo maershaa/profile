@@ -1,5 +1,6 @@
 @import url("./header.css");
 @import url("./hero.css");
+@import url("./about_section.css");
 @import url("./technologies.css");
 @import url("./projects.css");
 @import url("./contacts.css");
@@ -42,6 +43,8 @@
   --background-size: contain, auto;
   --background-position: center, center;
 
+  --icon-color: #6971A2;
+
   /* Фон для мобильных */
  --background-img-mobile: radial-gradient(
     circle,
@@ -68,7 +71,7 @@
   --button-hover-border: #646cff;
   --border-header: #f3f3f333; /* прозрачный белый */
 
-
+--icon-color: #6971A2;
 
   --background-img: url("src/assets/images/hero/grid-pattern.png"),
     url("src/assets/images/hero/spotlight-left.png"),

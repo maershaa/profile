@@ -1,0 +1,287 @@
+#about {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  flex-wrap: wrap;
+}
+
+.about-section-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1130px) {
+  .about-section-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 40px;
+  }
+}
+
+.about_section_left-wrapper {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1130px) {
+  .about_section_left-wrapper {
+    width: 45%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .about_section_left-wrapper {
+    width: 50%;
+  }
+}
+
+.about_section_right_wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about_section_right_wrapper {
+    display: inline;
+
+    width: 70%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex-wrap: wrap;
+
+    column-gap: 5px;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  .about_section_right_wrapper {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .about_section_right_wrapper {
+    width: 50%;
+  }
+}
+
+.img-grid-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.image-container {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 10px;
+  margin: 20px;
+
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rainbow-square,
+  .dark-square {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+  }
+}
+
+.rainbow-square {
+  transform: rotate(20deg);
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rainbow-square-container {
+  position: relative;
+}
+
+.rainbow-square-container:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  border-right: 3px solid hsla(0, 0%, 51%, 0.25);
+  border-bottom: 2px solid hsla(0, 0%, 51%, 0.25);
+  opacity: 1;
+
+  transform: rotate(20deg);
+
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.dark-square {
+  position: relative;
+  z-index: 2;
+
+  transform: rotate(-20deg);
+
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-square-container {
+  position: relative;
+}
+
+.dark-square-container:after {
+  content: "";
+  position: absolute;
+
+  bottom: -20px;
+  left: -15px;
+
+  width: 100%;
+  height: 100%;
+
+  background: var(--icon-color);
+
+  opacity: 1;
+
+  transform: rotate(-20deg);
+
+  pointer-events: none;
+  border-radius: 10px;
+
+  z-index: 1;
+}
+
+.about-text {
+  padding: 5px;
+  margin-bottom: 5px;
+
+  color: var(--text-primary);
+
+  text-align: justify;
+}
+
+.about-text::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1;
+  font-family: "Georgia", serif;
+}
+
+.about-rhombus-icon {
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  animation-name: animation-rhombus-icon;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+@keyframes animation-rhombus-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about-rhombus-icon.right {
+  top: 20px;
+  fill: var(--accent-color1);
+  left: clamp(40px, 6vw, 115px);
+}
+
+.about-rhombus-icon.left {
+  top: 130px;
+  fill: var(--accent-color2);
+  left: clamp(40px, 6vw, -115px);
+}
+
+.about-icon {
+  position: absolute;
+stroke: none;
+  fill: var(--icon-color);
+}
+
+.milkyway {
+  width: 90px;
+  height: 90px;
+
+  top: 150px;
+  left: 250px;
+}
+
+.milkyway:hover {
+  opacity: 0.6;
+}
+
+.star-two {
+  width: 100px;
+  height: 100px;
+
+  top: 130px;
+  left: 25px;
+
+    opacity: 0.4;
+
+}
+
+.star-two:hover {
+  opacity: 0.8;
+}
+
+.flover {
+  width: 70px;
+  height: 70px;
+
+  top: 85px;
+  left: 25px;
+
+  opacity: 0.4;
+}
+
+.flover:hover {
+  opacity: 0.8;
+}

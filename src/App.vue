@@ -49,11 +49,95 @@
 
   <section id="about">
     <h2 class="section-title">About</h2>
-    <h3 class="sectiom-descr">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione optio
-      dicta consectetur culpa quisquam blanditiis suscipit ipsam alias commodi
-      esse mollitia, quasi dolorum sunt qui quo ipsum, quod similique ex?
-    </h3>
+    <div class="about-section-wrapper">
+      <div class="about_section_left-wrapper">
+        <p class="about-text">
+          I’m just starting my journey as a frontend developer. I recently
+          completed a frontend development course where I gained solid
+          foundations and practical skills.
+        </p>
+
+        <p class="about-text">
+          I’m confident working with HTML, CSS, and JavaScript, and I actively
+          use tools like GitHub, Vite, and React to build modern, interactive
+          websites.
+        </p>
+
+        <p class="about-text">
+          For me, frontend development is not just a profession — it’s an
+          opportunity to create something beautiful and useful with my own
+          hands, turning ideas into live, interactive websites.
+        </p>
+
+        <p class="about-text">
+          I love learning and discovering new technologies, and every new
+          project feels like a little adventure and a chance to become better.
+          Sometimes it’s challenging, but that’s exactly what inspires me and
+          keeps me going.
+        </p>
+
+        <p class="about-text">
+          In my work, I try to make the interface convenient and clear because
+          it’s important to me that users feel comfortable and enjoy using the
+          products I create.
+        </p>
+
+        <p class="about-text">
+          I’m still gaining experience, but every day I feel myself growing and
+          developing. If you’re interested in seeing my projects or want to
+          collaborate — I’d be very happy to connect!
+        </p>
+      </div>
+
+      <div class="about_section_right_wrapper">
+        <div class="img-grid-item">
+          <div class="image-container rainbow-square-container">
+            <img
+              src="./assets/images/about/rainbow-square.jpg"
+              alt="rainbow-square"
+              class="rainbow-square"
+            />
+          </div>
+        </div>
+
+        <div class="img-grid-item">
+          <div class="image-container">
+            <svg class="about-rhombus-icon right">
+              <use href="/sprite.svg#rhombus"></use>
+            </svg>
+
+            <svg class="about-icon milkyway">
+              <use href="/sprite.svg#milkyway"></use>
+            </svg>
+
+            <svg class="about-icon star-two">
+              <use href="/sprite.svg#star2"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="img-grid-item">
+          <div class="image-container">
+            <svg class="about-rhombus-icon left">
+              <use href="/sprite.svg#rhombus"></use>
+            </svg>
+            <svg class="about-icon flover">
+              <use href="/sprite.svg#flover"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="img-grid-item">
+          <div class="image-container dark-square-container">
+            <img
+              src="./assets/images/about/dark-square.jpg"
+              alt="dark-square"
+              class="dark-square"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <main>
@@ -131,27 +215,45 @@
           <div class="projects-item-wpapper">
             <h3 class="project-title">Drinkify</h3>
             <p class="project-descr">
-Drinkify was a collaborative project, aiming to create a virtual bar experience with several unique functionalities. It offered an extensive catalog of cocktail recipes covering various drink types. Additionally, it featured a random cocktail generator and the ability for users to create personal lists of favorite cocktails and their corresponding ingredients. Our team used technologies such as React for the frontend and Node.js for backend functionalities, implementing data storage and retrieval through APIs.
+              Drinkify was a collaborative project, aiming to create a virtual
+              bar experience with several unique functionalities. It offered an
+              extensive catalog of cocktail recipes covering various drink
+              types. Additionally, it featured a random cocktail generator and
+              the ability for users to create personal lists of favorite
+              cocktails and their corresponding ingredients. Our team used
+              technologies such as React for the frontend and Node.js for
+              backend functionalities, implementing data storage and retrieval
+              through APIs.
             </p>
             <p class="project-stack">
-              Tech stack : <span>HTML5, CSS3, Adaptive layout, JavaScript </span>
+              Tech stack :
+              <span>HTML5, CSS3, Adaptive layout, JavaScript </span>
             </p>
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <a href="https://maershaa.github.io/drinkify-team-project/" class="link" target="_blank" rel="noopener noreferrer">
-                  <svg class="project-icon">
-                    <use
-                      class="icon-light"
-                      href="/sprite.svg#chain-icon-light"
-                    ></use>
-                    <use class="icon-dark" href="/sprite.svg#chain-icon"></use>
+                <a
+                  href="https://maershaa.github.io/drinkify-team-project/"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="project-icon icon-dark">
+                    <use href="/sprite.svg#chain-icon-dark"></use>
+                  </svg>
+                  <svg class="project-icon icon-light">
+                    <use href="/sprite.svg#chain-icon-light"></use>
                   </svg>
                   Live Preview
                 </a>
               </li>
 
               <li class="project-link-item">
-                <a href="https://github.com/maershaa/drinkify-team-project" class="link" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/maershaa/drinkify-team-project"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="project-icon">
                     <use href="/sprite.svg#github-icon-dark"></use>
                   </svg>
@@ -172,27 +274,40 @@ Drinkify was a collaborative project, aiming to create a virtual bar experience 
           <div class="projects-item-wpapper">
             <h3 class="project-title">ULM</h3>
             <p class="project-descr">
-              Developed a responsive website for a manufacturing company specializing in tin cans, metal trays, and other custom packaging products. The site highlights the company's product range, production capabilities, and contact information, providing a clean and modern user experience across all devices.
+              Developed a responsive website for a manufacturing company
+              specializing in tin cans, metal trays, and other custom packaging
+              products. The site highlights the company's product range,
+              production capabilities, and contact information, providing a
+              clean and modern user experience across all devices.
             </p>
             <p class="project-stack">
               Tech stack : <span>HTML , JavaScript </span>
             </p>
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <a href="https://maershaa.github.io/ulm/" class="link" target="_blank" rel="noopener noreferrer">
-                  <svg class="project-icon">
-                    <use
-                      class="icon-light"
-                      href="/sprite.svg#chain-icon-light"
-                    ></use>
-                    <use class="icon-dark" href="/sprite.svg#chain-icon"></use>
+                <a
+                  href="https://maershaa.github.io/ulm/"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="project-icon icon-dark">
+                    <use href="/sprite.svg#chain-icon-dark"></use>
+                  </svg>
+                  <svg class="project-icon icon-light">
+                    <use href="/sprite.svg#chain-icon-light"></use>
                   </svg>
                   Live Preview
                 </a>
               </li>
 
               <li class="project-link-item">
-                <a href="https://github.com/maershaa/ulm" class="link" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/maershaa/ulm"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="project-icon">
                     <use href="/sprite.svg#github-icon-dark"></use>
                   </svg>
@@ -213,28 +328,42 @@ Drinkify was a collaborative project, aiming to create a virtual bar experience 
           <div class="projects-item-wpapper">
             <h3 class="project-title">WEBSTUDIO</h3>
             <p class="project-descr">
-             It was my first personal endeavor where I delved into HTML, CSS, and learned to work with Figma. There's nothing more rewarding than observing the difference between where you started and where you've reached over time.This is why this project is so cherished and significant to me.
+              It was my first personal endeavor where I delved into HTML, CSS,
+              and learned to work with Figma. There's nothing more rewarding
+              than observing the difference between where you started and where
+              you've reached over time.This is why this project is so cherished
+              and significant to me.
             </p>
             <p class="project-stack">
-              Tech stack : <span>HTML5, CSS3, Adaptive layout, Git, Figma </span>
+              Tech stack :
+              <span>HTML5, CSS3, Adaptive layout, Git, Figma </span>
             </p>
 
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <a href="https://maershaa.github.io/goit-markup-hw-07/" class="link" target="_blank" rel="noopener noreferrer">
-                  <svg class="project-icon">
-                    <use
-                      class="icon-light"
-                      href="/sprite.svg#chain-icon-light"
-                    ></use>
-                    <use class="icon-dark" href="/sprite.svg#chain-icon"></use>
+                <a
+                  href="https://maershaa.github.io/goit-markup-hw-07/"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="project-icon icon-dark">
+                    <use href="/sprite.svg#chain-icon-dark"></use>
+                  </svg>
+                  <svg class="project-icon icon-light">
+                    <use href="/sprite.svg#chain-icon-light"></use>
                   </svg>
                   Live Preview
                 </a>
               </li>
 
               <li class="project-link-item">
-                <a href="https://github.com/maershaa/goit-markup-hw-07" class="link" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/maershaa/goit-markup-hw-07"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="project-icon">
                     <use href="/sprite.svg#github-icon-dark"></use>
                   </svg>
@@ -255,27 +384,43 @@ Drinkify was a collaborative project, aiming to create a virtual bar experience 
           <div class="projects-item-wpapper">
             <h3 class="project-title">Movie Search App</h3>
             <p class="project-descr">
-             This app provides a curated list of today's most popular movies on the homepage, allows users to search for movies by keywords, and offers comprehensive details about specific movies, including credits and reviews.
+              This app provides a curated list of today's most popular movies on
+              the homepage, allows users to search for movies by keywords, and
+              offers comprehensive details about specific movies, including
+              credits and reviews.
             </p>
             <p class="project-stack">
-              Tech stack : <span>HTML5, CSS3, Adaptive layout, JavaScript, React, Webpack, Rest api</span>
+              Tech stack :
+              <span
+                >HTML5, CSS3, Adaptive layout, JavaScript, React, Webpack, Rest
+                api</span
+              >
             </p>
             <ul class="list project-link-list">
               <li class="project-link-item">
-                <a href="https://maershaa.github.io/goit-react-hw-05-movies" class="link" target="_blank" rel="noopener noreferrer">
-                  <svg class="project-icon">
-                    <use
-                      class="icon-light"
-                      href="/sprite.svg#chain-icon-light"
-                    ></use>
-                    <use class="icon-dark" href="/sprite.svg#chain-icon"></use>
+                <a
+                  href="https://maershaa.github.io/goit-react-hw-05-movies"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="project-icon icon-dark">
+                    <use href="/sprite.svg#chain-icon-dark"></use>
+                  </svg>
+                  <svg class="project-icon icon-light">
+                    <use href="/sprite.svg#chain-icon-light"></use>
                   </svg>
                   Live Preview
                 </a>
               </li>
 
               <li class="project-link-item">
-                <a href="https://github.com/maershaa/goit-react-hw-05-movies" class="link" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/maershaa/goit-react-hw-05-movies"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="project-icon">
                     <use href="/sprite.svg#github-icon-dark"></use>
                   </svg>
