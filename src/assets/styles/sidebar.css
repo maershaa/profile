@@ -12,7 +12,7 @@ aside {
   background-color: var(--sidebar-bg);
   color: var(--sidebar-text);
 
-  width: calc(2rem + 32px);
+  width: calc(2rem + 10px);
 
   overflow: hidden;
 
@@ -45,6 +45,8 @@ aside .icon-logo {
   position: relative;
   top: 0;
   transition: 0.2s ease-in-out;
+
+  padding: 0;
 }
 
 aside .menu-toggle {
@@ -110,7 +112,7 @@ aside .sidebar-nav-item {
 
   column-gap: 1rem;
 
-  margin-left: 5px;
+  /* margin-left: 5px; */
   width: 100%;
 }
 
