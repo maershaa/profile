@@ -29,21 +29,25 @@
 
   /* Кнопки */
   --button-bg: #f9f9f9;
-  --shadow-border:  0 0 25px 10px rgba(100, 108, 255, 0.5),
+  --shadow-border: 0 0 25px 10px rgba(100, 108, 255, 0.5),
     0 0 60px 25px rgba(100, 108, 255, 0.25);
   --button-hover-border: #646cff;
 
   /* Фоны */
   --background-img: url("../images/hero/starts-sky.png"),
-    radial-gradient(circle, rgba(156, 184, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    radial-gradient(
+      circle,
+      rgba(156, 184, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
   --background-repeat: repeat, repeat;
   --background-size: contain, auto;
   --background-position: center, center;
 
-  --icon-color: #6971A2;
+  --icon-color: #6971a2;
 
   /* Фон для мобильных */
- --background-img-mobile: radial-gradient(
+  --background-img-mobile: radial-gradient(
     circle,
     rgba(156, 184, 255, 1) 0%,
     rgba(233, 239, 255, 1) 51%,
@@ -63,12 +67,12 @@
 
   --button-bg: #333333;
 
-  --shadow-border:   0 0 25px 10px rgba(100, 108, 255, 0.5),
+  --shadow-border: 0 0 25px 10px rgba(100, 108, 255, 0.5),
     0 0 60px 25px rgba(100, 108, 255, 0.25);
   --button-hover-border: #646cff;
   --border-header: #f3f3f333; /* прозрачный белый */
 
---icon-color: #6971A2;
+  --icon-color: #6971a2;
 
   --background-img: url("../images/hero/grid-pattern.png"),
     url("../images/hero/spotlight-left.png"),
@@ -91,11 +95,10 @@
   --accent-color2: #ffc0cb;
 
   /* Sidebar */
-  --sidebar-bg:#1e293b;
+  --sidebar-bg: #1e293b;
   --sidebar-text: #ffffffde;
   --sidebar-title: #64748b;
   --sidebar-hover: rgba(145, 150, 230, 0.4);
-
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -261,15 +264,15 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-section {
-  margin-bottom: 80px;
-}
+  section {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-section {
-  margin-bottom: 110px;
-}
+  section {
+    margin-bottom: 110px;
+  }
 }
 
 .section-title {
@@ -279,8 +282,3 @@ section {
 .sectiom-descr {
   margin-bottom: 10px;
 }
-
-
-
-
-
