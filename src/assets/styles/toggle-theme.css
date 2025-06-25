@@ -22,13 +22,13 @@
   top: -13px;
   right: -13px;
 
-  background-color: #ffc0cb; 
+  background-color: #ffc0cb;
   border-radius: 200px;
   box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4),
- inset 0 5px 15px rgba(255, 255, 255, 0.4); 
+    inset 0 5px 15px rgba(255, 255, 255, 0.4);
 
   cursor: pointer;
-transition: right 0.4s ease, left 0.4s ease, width 0.2s ease-in-out;
+  transition: right 0.4s ease, left 0.4s ease, width 0.2s ease-in-out;
 }
 
 /* Круглый ползунок, который двигается внутри .slider */
@@ -84,8 +84,8 @@ transition: right 0.4s ease, left 0.4s ease, width 0.2s ease-in-out;
 }
 
 /* 🌗 Иконки солнца и луны внутри ползунка */
-.slider .moon,
-.slider .sun {
+.slider .icon-moon,
+.slider .icon-sun {
   position: absolute;
   width: 21px;
   height: 21px;
@@ -96,39 +96,40 @@ transition: right 0.4s ease, left 0.4s ease, width 0.2s ease-in-out;
 }
 
 /* 🌞 Солнце по умолчанию видно, справа */
-.slider .sun {
+.slider .icon-sun {
   left: 44px;
   fill: #fff;
   opacity: 1;
 }
 
 /* 🌙 Луна по умолчанию скрыта, слева */
-.slider .moon {
+.slider .icon-moon {
   left: 6px;
   fill: #fff;
   opacity: 0;
 }
 
 /* 🌜 Включён dark-режим: солнце исчезает */
-.switch:checked + .slider .sun {
+.switch:checked + .slider .icon-sun {
   opacity: 0;
   transition-delay: 0s;
 }
 
 /* 🌜 Включён dark-режим: луна появляется */
-.switch:checked + .slider .moon {
+.switch:checked + .slider .icon-moon {
   opacity: 1;
   transition-delay: 0.1s;
 }
 
 /* 🌞 Включён light-режим: солнце видно */
-.switch:not(:checked) + .slider .sun {
+.switch:not(:checked) + .slider .icon-sun {
   opacity: 1;
   transition-delay: 0.1s;
 }
 
 /* 🌞 Включён light-режим: луна скрыта */
-.switch:not(:checked) + .slider .moon {
+.switch:not(:checked) + .slider .icon-moon {
   opacity: 0;
   transition-delay: 0s;
 }
+

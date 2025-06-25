@@ -1,6 +1,9 @@
 <template>
    
 <section id="projects">
+
+  <div class="sidebar-theme">
+</div>
       <h2 class="section-title">Projects</h2>
       <h3 class="sectiom-descr">Things I’ve built so far</h3>
 
@@ -234,3 +237,4 @@
     </section>
 
 </template>
+

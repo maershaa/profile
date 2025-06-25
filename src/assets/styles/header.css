@@ -1,4 +1,13 @@
 header {
+   display: none;
+
+  
+}
+
+
+
+@media screen and (min-width: 1024px) {
+ header{
   position: sticky;
 
   display: flex;
@@ -8,17 +17,6 @@ header {
 
   height: 30px;
   padding: 0 32px 28px 32px;
-  margin-bottom: 80px;
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    margin-bottom: 120px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
- header{
     margin-bottom: 180px;
   }
 }

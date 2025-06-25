@@ -1,5 +1,7 @@
 <template>
-    <section id="hero" class="hero">
+  <section id="hero" class="hero">
+    <Sidebar />
+
     <p class="greeting">
       Hi 👋, My name is Valeriia Yefremova I build things for web
     </p>
@@ -15,12 +17,14 @@
       <div class="animation-circle-pink"></div>
     </div>
 
-    <img src="../assets/images/my-photo.jpg" alt="my photo" class="main-photo" />
+    <img
+      src="../assets/images/my-photo.jpg"
+      alt="my photo"
+      class="main-photo"
+    />
   </section>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import Sidebar from "../components/Sidebar.vue";
 </script>

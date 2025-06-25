@@ -1,3 +1,4 @@
+@import url("./sidebar.css");
 @import url("./header.css");
 @import url("./hero.css");
 @import url("./about_section.css");
@@ -32,10 +33,6 @@
     0 0 60px 25px rgba(100, 108, 255, 0.25);
   --button-hover-border: #646cff;
 
-  /* Границы */
-  /* --border-header: #161f371a;  */
-
-
   /* Фоны */
   --background-img: url("../images/hero/starts-sky.png"),
     radial-gradient(circle, rgba(156, 184, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -58,7 +55,7 @@
   --bg-primary: #000319;
   --bg-secondary: linear-gradient(150deg, #04071d 0%, #0c0e23 100%);
 
-  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-primary: #ffffffde;
   --text-secondary: #bbbbbb;
 
   --link: #646cff;
@@ -92,6 +89,12 @@
   --accent-color1: #747bff;
 
   --accent-color2: #ffc0cb;
+
+  /* Sidebar */
+  --sidebar-bg:#1e293b;
+  --sidebar-text: #ffffffde;
+  --sidebar-title: #64748b;
+  --sidebar-hover: rgba(145, 150, 230, 0.4);
 
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
