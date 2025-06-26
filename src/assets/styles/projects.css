@@ -8,11 +8,13 @@
     align-content: center;
 
     flex-wrap: wrap;
+
   }
 }
 
 @media screen and (min-width: 768px) {
   .projects-list {
+
     flex-direction: row;
 
     gap: 40px;
@@ -30,10 +32,10 @@
 .projects-item {
   background-color: var(--bg-secondary);
   border-radius: 20px;
-
+border: 1px solid var(--accent-color1-transparent); 
   padding-bottom: 15px;
 
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   min-width: 280px; 
   flex: 1 1 300px; /* Позволяет карточкам гибко расти/сжиматься */

@@ -97,6 +97,7 @@
 
 :root {
   --accent-color1: #747bff;
+  --accent-color1-transparent: rgba(116, 123, 255, 0.3);
 
   --accent-color2: #ffc0cb;
 

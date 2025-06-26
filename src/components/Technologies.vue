@@ -37,7 +37,7 @@
         </li>
         <li class="technologies-item">
           <svg class="technologies-icon">
-            <use href="/sprite.svg#html-icon"></use>
+            <use href="/sprite.svg#vue-icon"></use>
           </svg>
         </li>
         <li class="technologies-item">
