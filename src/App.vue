@@ -1,4 +1,5 @@
 <template>
+   <Sidebar />
 
   <Header />
 
@@ -17,6 +18,7 @@
   <footer></footer>
 </template>
 
+
 <script setup>
 import { onMounted } from "vue";
 import { initThemeToggle } from "./helpers/themeToggle";
@@ -27,6 +29,9 @@ import About from "./components/About.vue";
 import Technologies from "./components/Technologies.vue";
 import Projects from "./components/Projects.vue";
 import Contacts from "./components/Contacts.vue";
+
+import Sidebar from "./components/Sidebar.vue";
+
 
 onMounted(() => {
   initThemeToggle();

@@ -53,6 +53,9 @@
     rgba(233, 239, 255, 1) 51%,
     rgba(233, 239, 255, 1) 100%
   );
+
+  /* Sidebar */
+  --sidebar-bg: rgb(65, 69, 131);
 }
 
 :root[data-theme="dark"] {
@@ -87,6 +90,9 @@
     rgba(59, 71, 111, 1) 42%,
     rgba(0, 3, 25, 1) 100%
   );
+
+  /* Sidebar */
+  --sidebar-bg: rgba(52, 55, 111, 1);
 }
 
 :root {
@@ -95,10 +101,9 @@
   --accent-color2: #ffc0cb;
 
   /* Sidebar */
-  --sidebar-bg: #1e293b;
   --sidebar-text: #ffffffde;
-  --sidebar-title: #64748b;
   --sidebar-hover: rgba(145, 150, 230, 0.4);
+  --sidebar-text-hover: #676fff;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -136,12 +141,16 @@ html {
   max-width: 1280px;
 
   box-sizing: border-box;
+
 }
 
 /* Мобильные телефоны от 320px и выше */
 @media screen and (min-width: 320px) {
   #app {
     padding: 2rem 1.5rem;
+
+    margin-left: calc(2rem + 12px); /* отступ равен ширине сайдбара */
+  transition: margin-left 0.2s ease-in-out;
   }
 }
 
@@ -231,35 +240,35 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  /* border-radius: 8px;
+  border: 1px solid transparent; */
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
+  /* font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1a1a1a; */
   cursor: pointer;
-  transition: border-color 0.25s;
+  /* transition: border-color 0.25s; */
 
-  background-color: var(--button-bg);
+  /* background-color: var(--button-bg); */
 }
 
-button:hover {
+/* button:hover {
   border-color: var(--button-hover-border);
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 .card {
   padding: 2em;
 }
 
 section {
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
   margin-bottom: 50px;
 }
 
