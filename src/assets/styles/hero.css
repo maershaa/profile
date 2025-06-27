@@ -57,9 +57,9 @@
 }
 
 @media screen and (min-width: 768px) {
-.greeting {
-  width: 40%;
-}
+  .greeting {
+    width: 40%;
+  }
 }
 
 .animations {
@@ -79,8 +79,8 @@
 
 @media screen and (min-width: 512px) {
   .animation-star {
-      width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
     top: 1px;
 
     left: clamp(40px, 60vw, 130px);
@@ -115,32 +115,29 @@
 }
 
 .animation-circle-blue {
-    display: block;
+  display: block;
 
-top: clamp(80px, 35vh, 900px);
-    right: clamp(10px, 60vw, 110px);
+  top: clamp(80px, 35vh, 900px);
+  right: clamp(10px, 60vw, 110px);
 
-    position: absolute;
+  position: absolute;
 
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 
-    background-color: var(--accent-color1);
-    box-shadow: 0 0 12px rgba(100, 108, 255, 0.4);
+  background-color: var(--accent-color1);
+  box-shadow: 0 0 12px rgba(100, 108, 255, 0.4);
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-      box-shadow 0.8s ease-in-out;}
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.8s ease-in-out;
+}
 
 @media screen and (min-width: 425px) {
   .animation-circle-blue {
-
- 
     width: 35px;
     height: 35px;
-
-
   }
 }
 
@@ -164,7 +161,7 @@ top: clamp(80px, 35vh, 900px);
   width: 20px;
   height: 20px;
 
-      top: 43px;
+  top: 43px;
 
   left: clamp(40px, 66vw, 96px);
 
@@ -181,7 +178,6 @@ top: clamp(80px, 35vh, 900px);
 
 @media screen and (min-width: 512px) {
   .animation-circle-pink {
-
     top: 24px;
     left: clamp(40px, 66vw, 115px);
   }

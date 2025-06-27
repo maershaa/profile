@@ -1,6 +1,5 @@
 <template>
   <section id="hero" class="hero">
- 
     <p class="greeting">
       Hi 👋, My name is Valeriia Yefremova I build things for web
     </p>
@@ -23,4 +22,3 @@
     />
   </section>
 </template>
-

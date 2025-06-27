@@ -56,6 +56,8 @@
 
   /* Sidebar */
   --sidebar-bg: rgb(65, 69, 131);
+
+  --icon-color: #808080;
 }
 
 :root[data-theme="dark"] {
@@ -93,6 +95,8 @@
 
   /* Sidebar */
   --sidebar-bg: rgba(52, 55, 111, 1);
+
+  --icon-color: #919191;
 }
 
 :root {
@@ -136,22 +140,20 @@ html {
 
 #app {
   margin: 0 auto;
-  padding: 2rem 1rem;
   text-align: center;
   width: 100%;
   max-width: 1280px;
 
   box-sizing: border-box;
-
 }
 
 /* Мобильные телефоны от 320px и выше */
 @media screen and (min-width: 320px) {
   #app {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0.5rem;
 
     margin-left: calc(2rem + 12px); /* отступ равен ширине сайдбара */
-  transition: margin-left 0.2s ease-in-out;
+    transition: margin-left 0.2s ease-in-out;
   }
 }
 
@@ -227,12 +229,17 @@ ol {
 
 a {
   font-weight: 500;
-  color: var(--link);
   text-decoration: inherit;
 }
 
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 a:hover {
-  color: var(--link-hover);
+  color: var(--accent-color1);
 }
 
 h1 {
@@ -241,35 +248,16 @@ h1 {
 }
 
 button {
-  /* border-radius: 8px;
-  border: 1px solid transparent; */
   padding: 0.6em 1.2em;
   font-size: 1em;
-  /* font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a; */
   cursor: pointer;
-  /* transition: border-color 0.25s; */
-
-  /* background-color: var(--button-bg); */
 }
-
-/* button:hover {
-  border-color: var(--button-hover-border);
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 .card {
   padding: 2em;
 }
 
 section {
-  /* padding-left: 50px;
-  padding-right: 50px; */
   margin-bottom: 50px;
 }
 
@@ -291,4 +279,42 @@ section {
 
 .sectiom-descr {
   margin-bottom: 10px;
+  width: 75%;
+  text-align: center;
+  margin: 0 20px 20px 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .sectiom-descr {
+    margin: 0 20px 30px 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectiom-descr {
+    margin-bottom: 30px;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  background-color: var(--bg-secondary);
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--accent-color1);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(255, 22, 135);
 }

@@ -1,5 +1,5 @@
 <template>
-   <Sidebar />
+  <Sidebar />
 
   <Header />
 
@@ -15,9 +15,21 @@
     <Contacts />
   </main>
 
-  <footer></footer>
-</template>
+<footer class="footer">
 
+    <p>Designed & built by  <a
+      href="https://www.linkedin.com/in/valeriiayefremova/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Valeriia Y.
+    </a> – Frontend Developer</p>
+  <p>© 2025 All rights reserved</p>
+
+</footer>
+
+  
+  </template>
 
 <script setup>
 import { onMounted } from "vue";
@@ -31,7 +43,6 @@ import Projects from "./components/Projects.vue";
 import Contacts from "./components/Contacts.vue";
 
 import Sidebar from "./components/Sidebar.vue";
-
 
 onMounted(() => {
   initThemeToggle();

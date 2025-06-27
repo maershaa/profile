@@ -14,13 +14,10 @@
       </ul>
 
       <ThemeToggle />
-      
     </div>
   </header>
 </template>
 
 <script setup>
-
 import ThemeToggle from "./ThemeToggle.vue";
-
 </script>

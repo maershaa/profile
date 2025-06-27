@@ -29,8 +29,8 @@
 }
 
 .about_section_left-wrapper {
-  width: 70%;
-  margin-bottom: 30px;
+  width: 75%;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1130px) {
@@ -241,7 +241,7 @@
 
 .about-icon {
   position: absolute;
-stroke: none;
+  stroke: none;
   fill: var(--icon-color);
 }
 
@@ -264,8 +264,7 @@ stroke: none;
   top: 130px;
   left: 25px;
 
-    opacity: 0.4;
-
+  opacity: 0.4;
 }
 
 .star-two:hover {
