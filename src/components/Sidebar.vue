@@ -51,12 +51,16 @@
         </a>
       </li>
     </ul>
+
+    <div class="sidebar-theme-toggle">
+      <ThemeToggle />
+    </div>
   </aside>
 </template>
 
 <script setup>
 import { useSidebar } from "../helpers/useSidebar";
-const { is_expanded, ToggleMenu } = useSidebar();
-
 import ThemeToggle from "./ThemeToggle.vue";
+
+const { is_expanded, ToggleMenu } = useSidebar();
 </script>

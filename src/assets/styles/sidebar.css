@@ -219,3 +219,14 @@ aside.is-expanded .sidebar-nav-item .link {
 
   justify-content: flex-start;
 }
+
+.sidebar-theme-toggle {
+  display: none;
+}
+
+aside.is-expanded .sidebar-theme-toggle {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
