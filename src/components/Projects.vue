@@ -78,7 +78,7 @@
           </p>
           <p class="project-stack">
             <strong> Tech stack: </strong>
-            HTML, JavaScript
+            HTML5, CSS3, Adaptive layout, JavaScript
           </p>
           <ul class="list project-link-list">
             <li class="project-link-item">
