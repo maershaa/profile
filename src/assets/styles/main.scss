@@ -1,0 +1,150 @@
+@use "./core/base.scss";
+@use "./core/theme.scss";
+
+@use "./components/hero.scss";
+@use "./components/about.scss";
+@use "./components/technologies.scss";
+@use "./components/projects.scss";
+@use "./components/contacts.scss";
+@use "./components/sidebar.scss";
+@use "./components/header.scss";
+@use "./components/toggle-theme.scss";
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(
+    14px,
+    1.5vw,
+    18px
+  ); /* адаптивный размер шрифта:
+    - минимум 14px (на маленьких экранах)
+    - 1.5vw — это 1.5% от ширины экрана (динамический размер)
+    - максимум 18px (на больших экранах)
+    Таким образом, 1rem будет автоматически меняться от 14px до 18px в зависимости от ширины экрана.
+  */
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 1280px;
+
+  box-sizing: border-box;
+
+  /* Мобильные телефоны от 320px и выше */
+  @media screen and (min-width: 320px) {
+    padding: 2rem 0.5rem;
+
+    margin-left: calc(2rem + 12px); /* отступ равен ширине сайдбара */
+    transition: margin-left 0.2s ease-in-out;
+  }
+
+  /* Планшеты от 768px */
+  @media screen and (min-width: 768px) {
+    padding: 3rem 2rem;
+    margin: 0 auto 0 auto;
+  }
+
+  /* Десктопы от 1024px */
+  @media screen and (min-width: 1024px) {
+    padding: 4rem 6rem;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-size: 1rem;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+
+  background-image: var(--background-img-mobile);
+
+  @media screen and (min-width: 768px) {
+    background-image: var(--background-img);
+    background-repeat: var(--background-repeat);
+    background-size: var(--background-size);
+    background-position: var(--background-position);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+a:hover {
+  color: var(--accent-color1);
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.card {
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 110px;
+  }
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-descr {
+  width: 75%;
+  text-align: center;
+  margin: 0 20px 20px 40px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 20px 30px 20px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 30px;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  background-color: var(--bg-secondary);
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--accent-color1);
+
+    &:hover {
+      text-decoration: none;
+      font-weight: 500;
+      color: rgb(255, 22, 135);
+    }
+  }
+}

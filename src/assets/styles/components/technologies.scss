@@ -1,0 +1,38 @@
+@use "../core/mixins.scss" as mixins;
+
+.technologies-list {
+  @include mixins.flex-center;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-content: center;
+
+  column-gap: 30px;
+  row-gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    column-gap: 50px;
+    row-gap: 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    column-gap: 100px;
+    row-gap: 70px;
+  }
+}
+.technologies-item,
+.technologies-icon {
+  width: 90px;
+  height: 90px;
+
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 120px;
+    height: 120px;
+  }
+}

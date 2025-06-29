@@ -1,0 +1,103 @@
+:root[data-theme="light"] {
+  /* Основные цвета фона */
+  --bg-primary: #ffffff;
+  --bg-secondary: rgba(233, 239, 255, 1);
+
+  /* Цвет текста */
+  --text-primary: #213547;
+  --text-secondary: #555555;
+
+  /* Цвета ссылок */
+  /* --link: #646cff;
+  --link-hover: #747bff; */
+
+  /* Кнопки */
+  --button-bg: #f9f9f9;
+  --shadow-border: 0 0 25px 10px rgba(100, 108, 255, 0.5),
+    0 0 60px 25px rgba(100, 108, 255, 0.25);
+  --button-hover-border: #646cff;
+
+  /* Фоны */
+  --background-img: url("../images/hero/starts-sky.png"),
+    radial-gradient(
+      circle,
+      rgba(156, 184, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  --background-repeat: repeat, repeat;
+  --background-size: contain, auto;
+  --background-position: center, center;
+
+  /* Фон для мобильных */
+  --background-img-mobile: radial-gradient(
+    circle,
+    rgba(156, 184, 255, 1) 0%,
+    rgba(233, 239, 255, 1) 51%,
+    rgba(233, 239, 255, 1) 100%
+  );
+
+  /* Sidebar */
+  --sidebar-bg: rgb(65, 69, 131);
+
+  --icon-color: #808080;
+}
+
+:root[data-theme="dark"] {
+  --bg-primary: #000319;
+  --bg-secondary: linear-gradient(150deg, #04071d 0%, #0c0e23 100%);
+
+  --text-primary: #ffffffde;
+  --text-secondary: #bbbbbb;
+
+  /* --link: #646cff;
+  --link-hover: #a8b1ff;
+
+  --button-bg: #333333; */
+
+  --shadow-border: 0 0 25px 10px rgba(100, 108, 255, 0.5),
+    0 0 60px 25px rgba(100, 108, 255, 0.25);
+  --button-hover-border: #646cff;
+
+  --background-img: url("../images/hero/grid-pattern.png"),
+    url("../images/hero/spotlight-left.png"),
+    url("../images/hero/spotlight-right.png");
+  --background-repeat: repeat, no-repeat, no-repeat;
+  --background-size: contain, contain, contain;
+  --background-position: center, top left, top right;
+
+  --background-img-mobile: radial-gradient(
+    circle,
+    rgb(156, 184, 255) 0%,
+    rgba(59, 71, 111, 1) 42%,
+    rgba(0, 3, 25, 1) 100%
+  );
+
+  /* Sidebar */
+  --sidebar-bg: rgba(52, 55, 111, 1);
+
+  --icon-color: #919191;
+}
+
+:root {
+  --accent-color1: #747bff;
+  --accent-color1-transparent: rgba(116, 123, 255, 0.3);
+  --accent-color2: #ffc0cb;
+
+  /* Sidebar */
+  --sidebar-text: #ffffffde;
+  --sidebar-hover: rgba(145, 150, 230, 0.4);
+  --sidebar-text-hover: #676fff;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}

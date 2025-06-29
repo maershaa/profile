@@ -1,7 +1,7 @@
 <template>
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <div class="contacts-wraper">
+    <div class="contacts-wrapper">
       <a href="tel:+38 093 763 43 92"> +38 093 763 43 92 </a>
       <a
         href="mailto:valeria.work2022@gmail.com

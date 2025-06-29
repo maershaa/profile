@@ -2,7 +2,7 @@
   <section id="projects">
     <div class="sidebar-theme"></div>
     <h2 class="section-title">Projects</h2>
-    <h3 class="sectiom-descr">Things I’ve built so far</h3>
+    <h3 class="section-descr">Things I’ve built so far</h3>
 
     <ul class="list projects-list">
       <li class="projects-item">

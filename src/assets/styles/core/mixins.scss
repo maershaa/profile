@@ -1,0 +1,26 @@
+
+// Определение миксина
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Использование
+// .hero {
+//   @include flex-center;
+//   flex-direction: column;
+// }
+
+// Определение миксина
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Использование
+// .modal {
+//   @include position-center;
+// }

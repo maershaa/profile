@@ -1,7 +1,7 @@
 <template>
   <section id="tech_stack">
     <h2 class="section-title">My Tech Stack</h2>
-    <h3 class="sectiom-descr">Technologies I’ve been working with recently</h3>
+    <h3 class="section-descr">Technologies I’ve been working with recently</h3>
     <ul class="list technologies-list">
       <li class="technologies-item">
         <svg class="technologies-icon">
@@ -40,7 +40,7 @@
       </li>
       <li class="technologies-item">
         <svg class="technologies-icon">
-          <use href="/sprite.svg#html-icon"></use>
+          <use href="/sprite.svg#sass-logo"></use>
         </svg>
       </li>
       <li class="technologies-item">

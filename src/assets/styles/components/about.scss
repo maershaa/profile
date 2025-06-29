@@ -1,27 +1,22 @@
-#about {
-  display: flex;
-  flex-direction: column;
+@use "../core/mixins.scss" as mixins;
 
-  justify-content: center;
-  align-items: center;
+#about {
+  @include mixins.flex-center;
+
+  flex-direction: column;
   align-content: center;
 
   flex-wrap: wrap;
 }
 
 .about-section-wrapper {
-  display: flex;
+  @include mixins.flex-center;
+
   flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
   align-content: center;
-
   flex-wrap: wrap;
-}
 
-@media screen and (min-width: 1130px) {
-  .about-section-wrapper {
+  @media screen and (min-width: 1130px) {
     flex-direction: row;
     flex-wrap: nowrap;
     column-gap: 40px;
@@ -31,53 +26,38 @@
 .about_section_left-wrapper {
   width: 75%;
   margin-bottom: 20px;
-}
 
-@media screen and (min-width: 1130px) {
-  .about_section_left-wrapper {
+  @media screen and (min-width: 1130px) {
     width: 45%;
     margin-bottom: 0;
   }
-}
 
-@media screen and (min-width: 1230px) {
-  .about_section_left-wrapper {
+  @media screen and (min-width: 1230px) {
     width: 50%;
   }
 }
 
 .about_section_right_wrapper {
   display: none;
-}
 
-@media screen and (min-width: 768px) {
-  .about_section_right_wrapper {
-    display: inline;
+  @media screen and (min-width: 768px) {
+  @include mixins.flex-center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     width: 70%;
     max-width: 600px;
 
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
     align-content: center;
-
-    flex-wrap: wrap;
 
     column-gap: 5px;
   }
-}
 
-@media screen and (min-width: 1130px) {
-  .about_section_right_wrapper {
+  @media screen and (min-width: 1130px) {
     width: 55%;
   }
-}
 
-@media screen and (min-width: 1230px) {
-  .about_section_right_wrapper {
+  @media screen and (min-width: 1230px) {
     width: 50%;
   }
 }
@@ -95,17 +75,14 @@
   margin: 20px;
 
   display: inline-block;
-}
 
-@media screen and (min-width: 768px) {
-  .image-container {
+  @media screen and (min-width: 768px) {
     width: 150px;
     height: 150px;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .image-container {
+  @media screen and (min-width: 1024px) {
+    //!!! проверь не съехало ли все
     width: 200px;
     height: 200px;
   }
@@ -246,6 +223,8 @@
 }
 
 .milkyway {
+  position: absolute;
+
   width: 90px;
   height: 90px;
 
@@ -258,6 +237,8 @@
 }
 
 .star-two {
+  position: absolute;
+
   width: 100px;
   height: 100px;
 
@@ -272,6 +253,8 @@
 }
 
 .flover {
+  position: absolute;
+
   width: 70px;
   height: 70px;
 

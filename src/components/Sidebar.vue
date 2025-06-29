@@ -64,3 +64,6 @@ import ThemeToggle from "./ThemeToggle.vue";
 
 const { is_expanded, ToggleMenu } = useSidebar();
 </script>
+
+<style>
+</style>
