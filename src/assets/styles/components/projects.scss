@@ -28,10 +28,10 @@
   border-radius: 20px;
   border: 1px solid var(--accent-color1-transparent);
 
-  width: 80%;
-  max-width: 400px;
   min-width: 200px;
+  max-width: 400px;
 
+  width: 80%;
   height: 500px; /* !!Подумай над этим */
 
   @media screen and (min-width: 768px) {
@@ -49,7 +49,8 @@
 .projects-item:hover {
   cursor: pointer;
   box-shadow: var(--shadow-border);
-  transition: box-shadow 0.4s ease;
+
+@include mixins.transition-shadow;
 }
 
 .projects-img {
@@ -146,8 +147,7 @@
 }
 
 .project-icon {
-  width: 20px;
-  height: 20px;
+  @include mixins.size(20px, 20px);
 }
 
 .chain {

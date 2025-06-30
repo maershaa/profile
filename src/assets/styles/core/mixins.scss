@@ -1,26 +1,34 @@
-
 // Определение миксина
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+// @include mixins.flex-center;
 
-// Использование
-// .hero {
-//   @include flex-center;
-//   flex-direction: column;
-// }
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+// @include mixins.size(200px, 100px);
 
-// Определение миксина
-@mixin position-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// !! cubic-bezier(0.25, 1, 0.5, 1 - одна из самых часто используемых и универсальных. Плавно начинается, но быстро ускоряется. Выглядит как "умная" ease-in-out, но чуть динамичнее.
+
+//  Только тень — базовая
+@mixin transition-shadow {
+  transition: box-shadow 0.4s ease;
+}
+// Стандартная плавность
+@mixin transition-default {
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
 }
 
-// Использование
-// .modal {
-//   @include position-center;
-// }
+// Замедленная, мягкая анимация (для акцентов)
+@mixin transition-smooth {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.8s ease;
+}
+
+// Плавное появление/исчезновение через прозрачность. Подходит для модалок, подсказок
+@mixin transition-opacity {
+  transition: opacity 0.3s ease;
+}

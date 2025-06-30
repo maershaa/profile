@@ -26,15 +26,13 @@
 }
 
 .main-photo {
-  width: 250px;
-  height: 250px;
+  @include mixins.size(250px, 250px);
 
   border-radius: 50%;
   object-fit: cover;
 
   @media screen and (min-width: 768px) {
-    width: 300px;
-    height: 300px;
+    @include mixins.size(300px, 300px);
   }
 }
 
@@ -62,20 +60,16 @@
 
 .animation-star {
   position: absolute;
-
-  width: 70px;
-  height: 70px;
-
   top: 1px;
-
   left: clamp(10px, 10vw, 110px);
 
-  @media screen and (min-width: 512px) {
-    width: 100px;
-    height: 100px;
-    top: 1px;
+  @include mixins.size(70px, 70px);
 
+  @media screen and (min-width: 512px) {
+    top: 1px;
     left: clamp(40px, 60vw, 130px);
+
+    @include mixins.size(100px, 100px);
   }
 
   @media screen and (min-width: 768px) {
@@ -112,20 +106,17 @@
 
   position: absolute;
 
-  width: 25px;
-  height: 25px;
+  @include mixins.size(25px, 25px);
 
   background-color: var(--accent-color1);
   box-shadow: 0 0 12px rgba(100, 108, 255, 0.4);
 
   border-radius: 50%;
 
-  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-    box-shadow 0.8s ease-in-out;
+  @include mixins.transition-smooth;
 
   @media screen and (min-width: 425px) {
-    width: 35px;
-    height: 35px;
+    @include mixins.size(35px, 35px);
   }
 
   @media screen and (min-width: 768px) {
@@ -144,8 +135,7 @@
   display: block;
   position: absolute;
 
-  width: 20px;
-  height: 20px;
+  @include mixins.size(20px, 20px);
 
   top: 43px;
 
@@ -159,7 +149,7 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 
-  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+  @include mixins.transition-default;
 
   @media screen and (min-width: 512px) {
     top: 24px;

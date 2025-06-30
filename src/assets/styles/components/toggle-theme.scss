@@ -1,3 +1,6 @@
+@use "../core/mixins.scss" as mixins;
+
+
 /* Обёртка для переключателя */
 .theme-toggle {
   margin: 0 20px;
@@ -7,8 +10,7 @@
 /* Скрываем checkbox: он нужен только для логики, не для отображения */
 .switch {
   visibility: hidden;
-  width: 0;
-  height: 0;
+  @include mixins.size(0, 0);
 }
 
 /* Основная панель-переключатель (label), в ней движется псевдоэлемент-ползунок */
@@ -16,8 +18,7 @@
   display: block;
   position: relative;
 
-  width: 70px;
-  height: 32px;
+@include mixins.size(70px, 32px);
 
   top: -13px;
   right: -13px;
@@ -39,8 +40,7 @@
   top: 2px;
   right: 2px; /* по умолчанию прижат к правому краю (режим light) */
 
-  width: 28px;
-  height: 28px;
+@include mixins.size(28px, 28px);
 
   background: linear-gradient(
     180deg,
@@ -87,12 +87,12 @@
 .slider .icon-moon,
 .slider .icon-sun {
   position: absolute;
-  width: 21px;
-  height: 21px;
+@include mixins.size(21px, 21px);
   top: 5px;
   z-index: 100;
-  transition: opacity 0.3s ease;
-  pointer-events: none; /* чтобы не мешали нажатию */
+  pointer-events: none;
+
+  @include mixins.transition-opacity;
 }
 
 /* 🌞 Солнце по умолчанию видно, справа */
