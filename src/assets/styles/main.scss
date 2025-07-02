@@ -1,14 +1,14 @@
-@use "./core/base.scss";
-@use "./core/theme.scss";
+@use "./core/_base.scss";
+@use "./core/_theme.scss";
 
-@use "./components/hero.scss";
-@use "./components/about.scss";
-@use "./components/technologies.scss";
-@use "./components/projects.scss";
-@use "./components/contacts.scss";
-@use "./components/sidebar.scss";
-@use "./components/header.scss";
-@use "./components/toggle-theme.scss";
+@use "./components/_hero.scss";
+@use "./components/_about.scss";
+@use "./components/_technologies.scss";
+@use "./components/_projects.scss";
+@use "./components/_contacts.scss";
+@use "./components/_sidebar.scss";
+@use "./components/_header.scss";
+@use "./components/_toggle-theme.scss";
 
 html {
   scroll-behavior: smooth;
